@@ -1,16 +1,23 @@
-#ifndef REPTILE_H
-#define REPTILE_H
-
-#include "Animal.h"
-
-//define reptile class here
-
+using namespace std;
+#include <stdlib.h>
+#include <string>
+#include <cmath>
+#include "Animal.cpp"
 
 
+#ifndef FINALSEM_REPTILE_H
+#define FINALSEM_REPTILE_H
+
+class Reptile: public Animal{
+private:
+    bool isvenemous;
+public:
+    Reptile();
+    Reptile(bool i);
+    ~Reptile();
+};
 
 
 
 
-
-
-#endif
+#endif //FINALSEM_REPTILE_H
