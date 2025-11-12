@@ -1,13 +1,21 @@
-#ifndef MAMMAL_H
-#define MAMMAL_H
+#include <iostream>
+using namespace std;
+#include <stdlib.h>
+#include <string>
+#include <cmath>
+#include "Animal.cpp"
+#ifndef FINALSEM_MAMMAL_H
+#define FINALSEM_MAMMAL_H
 
-#include "Animal.h"
+class Mammal : public Animal{
+private:
+    string furcolor;
+public:
+    Mammal();
+    Mammal(string f);
+    ~Mammal();
+};
 
-//define mammal class here
 
 
-
-
-
-
-#endif
+#endif //FINALSEM_MAMMAL_H
